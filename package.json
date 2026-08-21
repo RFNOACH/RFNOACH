@@ -1,0 +1,8 @@
+{
+  "name": "profile-readme-draft",
+  "version": "1.0.0",
+  "description": "Animated ASCII portrait + rocket contribution heatmap for the GitHub profile README",
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "scripts": { "generate": "node generate.mjs" }
+}

@@ -7,6 +7,14 @@
 -->
 
 <p align="center">
+  <img src="https://raw.githubusercontent.com/RFNOACH/RFNOACH/main/hero.svg" alt="Noach Ramallo — AI/ML Engineer" width="100%"/>
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/RFNOACH/RFNOACH/main/dist/github-rocket.svg" alt="Contribution heatmap — rocket over the grid" width="100%"/>
+</p>
+
+<p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=220&section=header&text=Noach%20—%20AI%2FML%20Engineer&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Building%20LLM%20systems%20that%20ship&descAlignY=58&descSize=18" alt="header banner"/>
 </p>
 
