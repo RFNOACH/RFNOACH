@@ -7,11 +7,11 @@
 -->
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/RFNOACH/RFNOACH/main/hero.svg" alt="Noach Ramallo — AI/ML Engineer" width="100%"/>
+  <img src="https://raw.githubusercontent.com/RFNOACH/RFNOACH/main/hero.svg?v=2" alt="Noach Ramallo — AI/ML Engineer" width="100%"/>
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/RFNOACH/RFNOACH/main/dist/github-rocket.svg" alt="Contribution heatmap — rocket over the grid" width="100%"/>
+  <img src="https://raw.githubusercontent.com/RFNOACH/RFNOACH/main/dist/github-rocket.svg?v=2" alt="Contribution heatmap — rocket over the grid" width="100%"/>
 </p>
 
 <p align="center">
