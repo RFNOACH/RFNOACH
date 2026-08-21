@@ -20,19 +20,6 @@
   </a>
 </p>
 
-<p align="center">
-  <a href="mailto:noach@bizzup.app"><img src="https://img.shields.io/badge/Email-noach@bizzup.app-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
-  <a href="https://www.linkedin.com/in/{{LINKEDIN_HANDLE}}/"><img src="https://img.shields.io/badge/LinkedIn-Let's%20talk-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-  <a href="https://huggingface.co/{{HF_HANDLE}}"><img src="https://img.shields.io/badge/🤗_Hugging_Face-Models-FFD21E?style=for-the-badge&labelColor=000" alt="Hugging Face"/></a>
-  <a href="https://{{PORTFOLIO_URL}}"><img src="https://img.shields.io/badge/Portfolio-Live%20site-2D9CDB?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/></a>
-  <a href="https://github.com/RFNOACH?tab=followers"><img src="https://img.shields.io/github/followers/RFNOACH?label=Follow&style=for-the-badge&logo=github&color=181717" alt="Follow"/></a>
-</p>
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=RFNOACH&label=Profile%20views&color=00d9ff&style=flat-square" alt="profile views" />
-  <img src="https://img.shields.io/github/stars/RFNOACH?affiliations=OWNER&style=flat-square&color=00d9ff" alt="stars"/>
-</p>
-
 <img src="https://raw.githubusercontent.com/RFNOACH/RFNOACH/main/assets/divider.svg" width="100%" alt=""/>
 
 ## <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="26"> &nbsp;Tech I work with
@@ -103,14 +90,6 @@
 </table>
 
 <img src="https://raw.githubusercontent.com/RFNOACH/RFNOACH/main/assets/divider.svg" width="100%" alt=""/>
-
-## <img src="https://media.giphy.com/media/SWoSkN6DxTszqIKEqv/giphy.gif" width="26"> &nbsp;Let's talk
-
-<p align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="dev quote"/>
-</p>
-
-I'm open to **ML Engineer / AI Engineer** roles, contract work on LLM systems, and collaborations on interesting open-source AI projects.
 
 <p align="center">
   <a href="mailto:noach@bizzup.app"><img src="https://img.shields.io/badge/📧%20noach@bizzup.app-EA4335?style=for-the-badge&logoColor=white" alt="email"/></a>
