@@ -134,14 +134,31 @@ def portrait_group(rows):
     aw = COLS * char_w
     x0 = lx + (lw - aw) / 2
     y0 = ly + CHROME + (lh - CHROME - n * pitch) / 2 + pitch
-    dur = 0.09
+    # Looping "unfold -> hold -> fold" reveal: each row's clip width rides one shared
+    # T-second cycle, its phase baked into keyTimes so a wipe travels top->bottom on the
+    # way in and out. repeatCount indefinite keeps it going forever.
+    td, st, hold, gap = 0.10, 0.05, 2.4, 0.7        # type, stagger, hold-open, blank gap
+    reveal_span = n * st + td
+    fold_start = reveal_span + hold
+    T = fold_start + (n * st + td) + gap
+
     p = ["<g>"]
     for i, row in enumerate(rows):
         y = y0 + i * pitch
+        a, ae = i * st, i * st + td                 # unfold window
+        b, be = fold_start + i * st, fold_start + i * st + td  # fold window
+        times, vals = [0.0], [0]
+        if a > 0:
+            times.append(a); vals.append(0)
+        times += [ae, b, be, T]
+        vals += [aw, aw, 0, 0]
+        kt = ";".join(f"{t / T:.4f}" for t in times)
+        vv = ";".join(f"{v:.1f}" if isinstance(v, float) else str(v) for v in vals)
         cid = f"pr{i}"
         p.append(f'<clipPath id="{cid}"><rect x="{x0:.1f}" y="{y - pitch:.1f}" '
-                 f'height="{pitch:.1f}" width="0"><animate attributeName="width" from="0" '
-                 f'to="{aw:.1f}" begin="{i * dur:.2f}s" dur="{dur}s" fill="freeze"/></rect></clipPath>')
+                 f'height="{pitch:.1f}" width="0"><animate attributeName="width" '
+                 f'values="{vv}" keyTimes="{kt}" dur="{T:.2f}s" '
+                 f'repeatCount="indefinite"/></rect></clipPath>')
         p.append(f'<g clip-path="url(#{cid})"><text x="{x0:.1f}" y="{y:.1f}" '
                  f'fill="url(#ink)" font-size="{pitch:.1f}" textLength="{aw:.1f}" '
                  f'lengthAdjust="spacing" xml:space="preserve">{esc(row)}</text></g>')
@@ -149,7 +166,7 @@ def portrait_group(rows):
     p.append(f'<rect x="{x0 + aw + 3:.1f}" y="{cy - pitch * 0.8:.1f}" width="{char_w:.1f}" '
              f'height="{pitch * 0.8:.1f}" fill="#c9d1d9" opacity="0"><animate '
              f'attributeName="opacity" values="0;1;1;0;0;1" keyTimes="0;.01;.5;.51;.99;1" '
-             f'begin="{n * dur:.2f}s" dur="1.06s" repeatCount="indefinite"/></rect>')
+             f'dur="1.06s" repeatCount="indefinite"/></rect>')
     p.append("</g>")
     return "".join(p)
 
